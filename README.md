@@ -23,6 +23,6 @@ Place any images in the images folder, this is then copied over by the program t
 * imgkit
 
 ### TODO
-* Handle league races
+* Handle single car league races better
 * Handle team events
 * More car classes to constants

@@ -1,5 +1,7 @@
 # iRacing Results Table Generator
 
+![Kiku](example_image_doc.jpg)
+
 Generates result images for top 10 for each class in the results csv file
 
 ## Usage

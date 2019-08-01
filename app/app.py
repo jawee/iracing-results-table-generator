@@ -69,6 +69,8 @@ def generate_results_for_class(class_dict, results_file_name, single_class=False
             single_class: if there are multiple classes to generate for or not
     """
     class_name = ct.classNames[class_dict['classID']]
+    if class_dict['classID'] == ct.CLASS_ID_UNKNOWN:
+        class_name = 'unknown'
     class_file_name_html = '{className}Table.html'.format(className=class_name)
     class_file_name_image = '{className}.jpg'.format(className=class_name)
 
@@ -90,11 +92,15 @@ def generate_results_for_class(class_dict, results_file_name, single_class=False
     class_file_image_path = os.path.join(output_path, class_file_name_image)
 
     #Open results file
-    with open(results_filepath) as csvfile:
-        #Skip first three lines (for regular race, TODO league races)
-        csvfile.readline()
-        csvfile.readline()
-        csvfile.readline()
+    with open(results_filepath, encoding='utf-8') as csvfile:
+        #Skip lines until we find the header for the actual results
+        last_pos = csvfile.tell()
+        line = csvfile.readline()
+        while not line.startswith('"Fin Pos"'):
+            last_pos = csvfile.tell()
+            line = csvfile.readline()
+
+        csvfile.seek(last_pos)
 
         #Read as dictionary
         results = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -141,8 +147,7 @@ if __name__ == '__main__':
     # results_file_name = 'results.csv'
 
     class_list = [
-       # {'classID': ct.CLASS_ID_GT3CUP}
-       {'classID': ct.CLASS_ID_GT3}
+        {'classID': ct.CLASS_ID_UNKNOWN}
     ]
     results_file_name = 'results.csv'
     generate_results(class_list, results_file_name)

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  generator-app:
+    build: ./app
+    volumes:
+    - ./app:/usr/src/app
+    
+    #csv file should be placed in app directory, named results.csv
+    command: bash -c "python app.py"

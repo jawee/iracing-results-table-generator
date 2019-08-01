@@ -38,10 +38,16 @@ CLASS_ID_LMP1 = '116'
 CLASS_ID_HPD = '40'
 CLASS_ID_GTE = '100'
 CLASS_ID_GT3CUP = '95'
+CLASS_ID_DP = '77'
+CLASS_ID_IMSA2_GT3 = '473'
+CLASS_ID_GT3 = '59'
 
 classNames = {
         CLASS_ID_GTE: 'GTE',
         CLASS_ID_HPD: 'HPD',
         CLASS_ID_LMP1: 'LMP1',
-        CLASS_ID_GT3CUP: 'Porsche 911 GT3 Cup'
+        CLASS_ID_GT3CUP: 'Porsche 911 GT3 Cup',
+        CLASS_ID_DP: 'DP',
+        CLASS_ID_GT3: 'GT3',
+        CLASS_ID_IMSA2_GT3: 'GT3'
     }

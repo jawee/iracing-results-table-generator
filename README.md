@@ -1,11 +1,12 @@
 # iRacing Results Table Generator
 
-Generates result images for top 10 for each class in ilms
+Generates result images for top 10 for each class in the results csv file
 
 ## Usage
-1. Place a file named ```'results.csv'``` in the ```app``` directory
-2. run ```docker-compose up```
-3. Files are placed in the ```'app/output/'``` directory, named LMP1.jpg, GTE.jpg, HPD.jpg
+1. Place a file named ```results.csv``` in the ```app``` directory
+2. Add classes in main-method in ```app/app.py``` to the class_list. 
+3. Run ```docker-compose up```
+4. Files are placed in the ```app/output/``` directory, named after the car class, as defined in ```app/constants.py```
 
 ## Customization
 Make changes in template.html for styling and static text.

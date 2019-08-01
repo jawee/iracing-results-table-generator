@@ -37,3 +37,11 @@ COL_AGG_PTS = 'Agg Pts'
 CLASS_ID_LMP1 = '116'
 CLASS_ID_HPD = '40'
 CLASS_ID_GTE = '100'
+CLASS_ID_GT3CUP = '95'
+
+classNames = {
+        CLASS_ID_GTE: 'GTE',
+        CLASS_ID_HPD: 'HPD',
+        CLASS_ID_LMP1: 'LMP1',
+        CLASS_ID_GT3CUP: 'Porsche 911 GT3 Cup'
+    }

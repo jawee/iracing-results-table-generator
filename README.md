@@ -4,7 +4,7 @@
 
 Generates result images for top 10 for each class in the results csv file, classes is based on an input list, can be seen in the main-method in ```app/app.py```
 
-The input variables to the ```generate_results```-method should be in the form of:
+The input variables to the ```generate_results```-method should be in the form of (example below is for iRacing Le Mans Series):
 ```python
 class_list = [
          {'classID': ct.CLASS_ID_LMP1},

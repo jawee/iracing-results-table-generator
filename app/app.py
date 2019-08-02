@@ -147,7 +147,7 @@ if __name__ == '__main__':
     # results_file_name = 'results.csv'
 
     class_list = [
-        {'classID': ct.CLASS_ID_UNKNOWN}
+        {'classID': ct.CLASS_ID_MX5_CUP}
     ]
     results_file_name = 'results.csv'
     generate_results(class_list, results_file_name)

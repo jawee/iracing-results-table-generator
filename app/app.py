@@ -139,15 +139,14 @@ def generate_results(input_list, results_file_name):
         generate_results_for_class(class_dict, results_file_name, single_class)
 
 if __name__ == '__main__':
-    # class_list = [
-    #     {'classID': ct.CLASS_ID_LMP1},
-    #     {'classID': ct.CLASS_ID_HPD},
-    #     {'classID': ct.CLASS_ID_GTE}
-    # ]
-    # results_file_name = 'results.csv'
-
     class_list = [
-        {'classID': ct.CLASS_ID_MX5_CUP}
+        {'classID': ct.CLASS_ID_LMP1},
+        {'classID': ct.CLASS_ID_HPD},
+        {'classID': ct.CLASS_ID_GTE}
     ]
     results_file_name = 'results.csv'
+
+    # class_list = [
+    #     {'classID': ct.CLASS_ID_MX5_CUP}
+    # ]
     generate_results(class_list, results_file_name)

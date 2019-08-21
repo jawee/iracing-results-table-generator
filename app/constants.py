@@ -44,6 +44,9 @@ CLASS_ID_GT3 = '59'
 CLASS_ID_UNKNOWN = '0'
 CLASS_ID_MX5_CUP = '74'
 CLASS_ID_FERRARI_GT3 = '102'
+CLASS_ID_LMP1_SIL = '1410'
+CLASS_ID_GTE_SIL = '1411'
+CLASS_ID_GT3_SIL = '1412'
 
 classNames = {
         CLASS_ID_GTE: 'GTE',
@@ -55,5 +58,8 @@ classNames = {
         CLASS_ID_IMSA2_GT3: 'GT3',
         CLASS_ID_UNKNOWN: '',
         CLASS_ID_MX5_CUP: 'Mazda MX-5 Cup',
-        CLASS_ID_FERRARI_GT3: 'Ferrari 488 GT3'
+        CLASS_ID_FERRARI_GT3: 'Ferrari 488 GT3',
+        CLASS_ID_GTE_SIL: 'GT Pro',
+        CLASS_ID_LMP1_SIL: 'LMP1',
+        CLASS_ID_GT3_SIL: 'GT Am'
     }

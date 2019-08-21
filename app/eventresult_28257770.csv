@@ -1,10 +1,3 @@
-"Start Time","Track","Series","Hosted Session Name"
-"2019.08.20 5:40 PM GMT","Silverstone Circuit - Grand Prix","Hosted iRacing","Swedish iRacing League"
-
-
-
-"League Name","League ID","League Season","League Season ID","Points System"
-"Swedish iRacing League","2790","Höstsäsong 2019!","45116","None"
 
 "Fin Pos","Car ID","Car","Car Class ID","Car Class","Team ID","Cust ID","Name","Start Pos","Car #","Out ID","Out","Interval","Laps Led","Qualify Time","Average Lap Time","Fastest Lap Time","Fast Lap#","Laps Comp","Inc","League Points","Max Fuel Fill%","Weight Penalty (KG)"
 "1","100","Porsche 919","1410","LMP1","290742","290742","Magnus Vallström","2","166","0","Running","-00.000","25","","1:42.480","1:38.804","33","33","4","0","100","0"

@@ -92,7 +92,9 @@ def generate_results_for_class(class_dict, results_file_name, single_class=False
     class_file_image_path = os.path.join(output_path, class_file_name_image)
 
     #Open results file
-    with open(results_filepath, encoding='utf-8') as csvfile:
+    #TODO Fix why it's not working without this change with the latest results file
+    with open(results_filepath, 'r', encoding='utf-8', errors='ignore') as csvfile:
+    #with open(results_filepath, 'r') as csvfile:
         #Skip lines until we find the header for the actual results
         last_pos = csvfile.tell()
         line = csvfile.readline()
@@ -140,11 +142,12 @@ def generate_results(input_list, results_file_name):
 
 if __name__ == '__main__':
     class_list = [
-        {'classID': ct.CLASS_ID_LMP1},
-        {'classID': ct.CLASS_ID_HPD},
-        {'classID': ct.CLASS_ID_GTE}
+        {'classID': ct.CLASS_ID_LMP1_SIL},
+        {'classID': ct.CLASS_ID_GTE_SIL},
+        {'classID': ct.CLASS_ID_GT3_SIL}
     ]
-    results_file_name = 'results.csv'
+    results_file_name = 'eventresult_28257770.csv'
+    #results_file_name = 'results.csv'
 
     # class_list = [
     #     {'classID': ct.CLASS_ID_MX5_CUP}

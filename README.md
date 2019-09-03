@@ -34,6 +34,8 @@ Place any images in the images folder, this is then copied over by the program t
     * imgkit
 * Docker
 
+## Design by [Pixeldust](https://pixeldust.se)
+
 
 ### TODO-list
 * Handle single car league races better

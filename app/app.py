@@ -48,6 +48,7 @@ def print_to_html_file(results_list, class_name, filepath, filepath_template, si
     contents = "".join(contents)
     fc.write(contents)
     fc.close()
+    os.chmod(filepath, 0o777)
 
 def copy_template_images_to_output(imagesFolderPath, outputPath):
     """ Copy the images folder recursively to another path
@@ -120,6 +121,8 @@ def generate_results_for_class(class_dict, results_file_name, single_class=False
         print_to_html_file(results_list_for_class, class_name, class_file_html_path, template_filepath, single_class)
         #Create the image file
         imgkit.from_file(class_file_html_path, class_file_image_path)
+        
+        os.chmod(class_file_image_path, 0o777)
 
 def generate_results(input_list, results_file_name):
     """ Generate the results

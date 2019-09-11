@@ -145,11 +145,10 @@ def generate_results(input_list, results_file_name):
 
 if __name__ == '__main__':
     class_list = [
-        {'classID': ct.CLASS_ID_LMP1_SIL},
         {'classID': ct.CLASS_ID_GTE_SIL},
         {'classID': ct.CLASS_ID_GT3_SIL}
     ]
-    results_file_name = 'eventresult_28344033.csv'
+    results_file_name = 'eventresult_28525957.csv'
     #results_file_name = 'results.csv'
 
     #class_list = [
